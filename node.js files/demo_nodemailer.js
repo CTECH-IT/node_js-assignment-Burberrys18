@@ -5,8 +5,8 @@ var transporter = nodemailer.createTransport({
   port: 25,
   //secure: false, // use SSL
   auth: {
-    user: '1019654@isd535.org',
-    pass: 'Something2021!'
+    user: '1019654',
+    pass: 'home2120'
   },
   tls: {
     rejectUnauthorized: false
