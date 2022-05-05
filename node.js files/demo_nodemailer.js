@@ -1,15 +1,10 @@
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-  host: 'saturn.rochesterschools.org',
-  port: 25,
-  //secure: false, // use SSL
+  service: 'gmail',
   auth: {
-    user: '1019654',
-    pass: 'home2120'
-  },
-  tls: {
-    rejectUnauthorized: false
+    user: '1019654@isd535.org',
+    pass: 'Something2021!'
   }
 });
 
@@ -20,7 +15,7 @@ var mailOptions = {
   text: 'That was easy!'
 };
 
-transporter.sendMail(mailOptions, function(error, info){
+transporter.sendMail(mailOptions, function (error, info) {
   if (error) {
     console.log(error);
   } else {
